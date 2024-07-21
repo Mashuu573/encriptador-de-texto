@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*Se establecen variables que contienen fuentes y colores de uso frecuente en la personalizacion de este proyecto*/
+:root{
+    --Fuente-Inter: "Inter", sans-serif;
+    --Color-Azul-oscuro: #0A3871;
+    --Color-Gris: #D8DFE8;
+    --Color-Azul-claro: #F3F5FC;
+    --Color-Blanco: #ffffff;
+}
+
+/*Color del fondo de pagina*/
+
+.pagina{
+    background-color: var(--Color-Azul-claro);
+}
+
+/*Estelizacion de los cuadros entrada y salida de texto*/
+.entrada_y_salida_de_texto{
+
+}
+
+.entrada_de_texto, textarea{
+    resize: none;
+}
+
+.salida_de_texto, textarea{
+    resize: none;
+}
+
+    
