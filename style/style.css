@@ -35,7 +35,8 @@
     margin-top: 283px;
     margin-left: 1032px;
     position: relative;
-    left: -405px; /* Ajusta el valor según sea necesario */
+    top: -80px;
+    left: -380px; /* Ajusta el valor según sea necesario */
     margin: 0;
 }
 
@@ -60,16 +61,62 @@
 .texto_salida{
     width: 400px;
     height: 944px;
-    margin-top: 40px;
-    margin-left: 1000px;
+    margin-top: 0;
+    margin-left: 0;
     border-radius: 32px;
+    border: none;
     resize: none;
 }
 
-input::placeholder,
-textarea::placeholder {
+.mensaje_no_encontrado_texto{
+    font-family: var(--Fuente-Inter);
     font-weight: 700;
     font-size: 24px;
     line-height: 28.8px;
+    align-items: center;
+}
 
+.mensaje_no_encontrado_texto2{
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+}
+
+/*Estilizacion de texto de salida*/
+.Mensajes_de_salida_de_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 420px; /* Ajusta el valor según sea necesario */
+    bottom: -160px;
+}
+/**/
+.Botones{
+
+}
+
+.Encriptardor{
+
+}
+
+.Desencriptador{
+
+}
+
+.copiar{
+
+}
+
+/*Estilizacion del footer*/
+.Copy_y_redes{
+    background-color: var(--Color-Azul-oscuro);
+    padding: 24px;
+    color: var(--Color-Blanco);
+    text-align: center;
+    font-family: var(--Fuente-Inter);
+    font-size: 1.5rem;
+    font-weight:  400;
 }
