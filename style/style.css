@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*Se establecen variables*/
+:root{
+    --Fuente-Inter: "Inter", sans-serif;
+    --Color-Azul-oscuro: #0A3871;
+    --Color-blanco-grisaseo: #D8DFE8;
+    --Color-Azul-claro: #F3F5FC;
+    --Color-Blanco: #ffffff;
+    --Color-Gris: #343A40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Color del fondo de pagina*/
+.pagina{
+    background-color: var(--Color-Azul-claro);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*Estelizacion de imagenes*/
+.logo_de_alura{
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.Chica_mirando_diamante{
+    width: 336px;
+    height: 304px;
+    margin-top: 283px;
+    margin-left: 1032px;
+    position: relative;
+    top: -80px;
+    left: -380px; /* Ajusta el valor según sea necesario */
+    margin: 0;
+}
+
+/*Estelizacion de los cuadros entrada y salida de texto*/
+.entrada_y_salida_de_texto{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.texto_entrada{
+    width: 577px;
+    height: 944px;
+    margin-top: 168px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+    font-family: var(--Fuente-Inter);
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--Color-Azul-oscuro);
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+
+.texto_salida{
+    width: 400px;
+    height: 944px;
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 32px;
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    border: none;
+    resize: none;
+}
+
+.mensaje_no_encontrado_texto{
+    font-family: var(--Fuente-Inter);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    align-items: center;
+}
+
+.mensaje_no_encontrado_texto2{
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+}
+
+/*Estilizacion de texto de salida*/
+.Mensajes_de_salida_de_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 420px; /* Ajusta el valor según sea necesario */
+    bottom: -160px;
+}
+/*Estilizacion de botones*/
+.Botones{
+    display: flex;
+    align-items: center;
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36;
+    align-items: center;
+    width: 680px;
+    height: 67px;
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+    
+}
+
+.Encriptardor{
+
+}
+
+.Desencriptador{
+
+}
+
+.copiar{
+
+}
+
+/*Estilizacion del footer*/
+.Copy_y_redes{
+    background-color: var(--Color-Azul-oscuro);
+    padding: 24px;
+    color: var(--Color-Blanco);
+    text-align: center;
+    font-family: var(--Fuente-Inter);
+    font-size: 1.5rem;
+    font-weight:  400;
+}
