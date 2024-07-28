@@ -54,7 +54,7 @@
 
 .texto_entrada {
     width: 577px;
-    height: 944px;
+    height: 644px;
     margin-top: 168px;
     margin-left: 240px;
     margin-bottom: 100px;
@@ -65,6 +65,8 @@
     background-color: transparent;
     border: none;
     resize: none;
+    position: relative;
+    top: -150px;
 }
 
 .texto_salida {
@@ -112,30 +114,97 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 16px;
     gap: 20px;
     flex-wrap: wrap;
     width: 100%;
     max-width: 680px;
     margin: 20px 0;
+    position: relative;
+    top: -280px;
+    left: 200px;
 }
 
-.Encriptardor, .Desencriptador, .copiar {
-    padding: 24px 24px;
+.Encriptardor, .Desencriptador {
+    padding: 24px 100px;
     border: none;
     border-radius: 24px;
     gap: 8px;
-    background-color: var(--Color-Azul-oscuro);
-    color: var(--Color-Blanco);
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.Encriptardor:hover, .Desencriptador:hover, .copiar:hover {
+/* Botón Encriptar */
+.Encriptardor {
+    background-color: var(--Color-Azul-oscuro);
+    color: var(--Color-Blanco);
+}
+
+.Encriptardor:hover {
     background-color: var(--Color-Gris);
 }
+
+/* Botón Desencriptar */
+.Desencriptador {
+    background-color: var(--Color-Blanco);
+    color: var(--Color-Azul-oscuro);
+    border: 1px solid var(--Color-Azul-oscuro);
+}
+
+.Desencriptador:hover {
+    background-color: var(--Color-Gris);
+    color: var(--Color-Blanco);
+}
+
+/* Botón Copiar */
+.copiar {
+    padding: 24px 100px;
+    border: 1px solid var(--Color-Azul-oscuro);
+    border-radius: 24px;
+    gap: 8px;
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: var(--Color-Blanco);
+    color: var(--Color-Azul-oscuro);
+    position: relative;
+    top: -380px;   
+    left: 1230px;
+}
+
+.copiar:hover {
+    background-color: var(--Color-Gris);
+    color: var(--Color-Blanco);
+}
+
+/* Estilización del mensaje de alerta y texto de instrucciones */
+.mensaje_y_texto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+    position: relative;
+    top: -250px;
+    left: 250px;
+}
+
+.signo_de_exclamacion {
+    width: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+}
+
+.solo.letras_minusculas {
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
 
 /* Estilización del footer */
 .Copy_y_redes {
