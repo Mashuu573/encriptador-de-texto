@@ -19,6 +19,9 @@
 /*Color del fondo de pagina*/
 .pagina{
     background-color: var(--Color-Azul-claro);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /*Estelizacion de imagenes*/
@@ -48,11 +51,14 @@
 }
 .texto_entrada{
     width: 577px;
-    height: 1000px;
+    height: 944px;
     margin-top: 168px;
     margin-left: 240px;
+    margin-bottom: 100px;
     font-family: var(--Fuente-Inter);
     font-size: 32px;
+    line-height: 48px;
+    color: var(--Color-Azul-oscuro);
     background-color: transparent;
     border: none;
     resize: none;
@@ -64,6 +70,10 @@
     margin-top: 0;
     margin-left: 0;
     border-radius: 32px;
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
     border: none;
     resize: none;
 }
@@ -93,9 +103,21 @@
     left: 420px; /* Ajusta el valor según sea necesario */
     bottom: -160px;
 }
-/**/
+/*Estilizacion de botones*/
 .Botones{
-
+    display: flex;
+    align-items: center;
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36;
+    align-items: center;
+    width: 680px;
+    height: 67px;
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+    
 }
 
 .Encriptardor{
