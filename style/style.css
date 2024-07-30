@@ -186,16 +186,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
-    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+    margin-top: 20px; 
+    margin-bottom: 20px; 
     position: relative;
     top: -250px;
     left: 250px;
 }
 
 .signo_de_exclamacion {
-    width: 16px; /* Ajusta el tamaño del ícono según sea necesario */
-    height: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+    width: 16px; 
+    height: 16px;
 }
 
 .solo.letras_minusculas {
@@ -239,3 +239,14 @@
     background-color: var(--Color-Azul-twitter-hover);
     color: var(--Color-Blanco);
 }
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .entrada_y_salida_de_texto{
+        
+    }
+}
+    
