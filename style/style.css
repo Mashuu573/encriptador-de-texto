@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /* Se establecen variables */
+*{
+    background: var(--Color-Azul-claro);
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
 :root {
     --Fuente-Inter: "Inter", sans-serif;
     --Color-Azul-oscuro: #0A3871;
@@ -9,244 +17,106 @@
     --Color-Blanco: #ffffff;
     --Color-Gris: #343A40;
     --Color-Gris-oscuro: #282828;
-    --Color-Azul-twitter: #1DA1F2;
-    --Color-Azul-twitter-hover: #0d8cf0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 7%;
+
 }
 
-/* Color del fondo de página */
-.pagina {
-    background-color: var(--Color-Azul-claro);
+main{
     display: flex;
-    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: 80px;
 }
 
-/* Estilización de imágenes */
-.logo_de_alura {
-    width: 120px;
-    height: 48px;
-    margin-top: 40px;
-    margin-left: 40px;
-}
-
-.Chica_mirando_diamante {
-    width: 336px;
-    height: 304px;
-    margin-top: 283px;
-    margin-left: 1032px;
-    position: relative;
-    top: -80px;
-    left: -380px; 
-    margin: 0;
-}
-
-/* Estilización de los cuadros entrada y salida de texto */
-.entrada_y_salida_de_texto {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.texto_entrada {
-    width: 577px;
-    height: 644px;
-    margin-top: 168px;
-    margin-left: 240px;
-    margin-bottom: 100px;
-    font-family: var(--Fuente-Inter);
-    font-size: 32px;
-    line-height: 48px;
-    color: var(--Color-Azul-oscuro);
-    background-color: transparent;
+.text_area{
     border: none;
+    color: var(--Color-Azul-oscuro);
+    margin-top: 90px;
+    text-transform: lowercase;
     resize: none;
-    position: relative;
-    top: -150px;
 }
 
-.texto_salida {
+::placeholder {color: var(--Color-Azul-oscuro);}
+    .text_area:focus {
+        outline: none;
+    }
+
+.mensaje{
     width: 400px;
-    height: 944px;
-    margin-top: 0;
-    margin-left: 0;
-    border-radius: 32px;
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    height: 744px;
+    top: 40px;
+    left: 1300px;
+    background: var(--Color-Blanco);
+    background-image: url(/style/Assets/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
+    border-radius: 32px;
+    color: var(--Color-Azul-oscuro);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
     resize: none;
 }
 
-/* Estilización del texto de mensaje */
-.Mensajes_de_salida_de_texto {
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 420px; 
-    bottom: -160px;
+    margin-top: 18px;
 }
 
-.mensaje_no_encontrado_texto {
-    font-family: var(--Fuente-Inter);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
-    align-items: center;
-}
-
-.mensaje_no_encontrado_texto2 {
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    align-items: center;
-}
-
-/* Estilización de botones */
-.Botones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 680px;
-    margin: 20px 0;
-    position: relative;
-    top: -280px;
-    left: 200px;
-}
-
-.Encriptardor, .Desencriptador {
-    padding: 24px 100px;
-    border: none;
-    border-radius: 24px;
-    gap: 8px;
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Botón Encriptar */
-.Encriptardor {
+.btn-encriptar{
     background-color: var(--Color-Azul-oscuro);
-    color: var(--Color-Blanco);
-}
-
-.Encriptardor:hover {
-    background-color: var(--Color-Gris);
-}
-
-/* Botón Desencriptar */
-.Desencriptador {
-    background-color: var(--Color-Blanco);
-    color: var(--Color-Azul-oscuro);
-    border: 1px solid var(--Color-Azul-oscuro);
-}
-
-.Desencriptador:hover {
-    background-color: var(--Color-Gris);
-    color: var(--Color-Blanco);
-}
-
-/* Botón Copiar */
-.copiar {
-    padding: 24px 100px;
     border: 1px solid var(--Color-Azul-oscuro);
     border-radius: 24px;
-    gap: 8px;
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: var(--Color-Blanco);
-    color: var(--Color-Azul-oscuro);
-    position: relative;
-    top: -380px;   
-    left: 1230px;
-}
-
-.copiar:hover {
-    background-color: var(--Color-Gris);
     color: var(--Color-Blanco);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
 }
 
-/* Estilización del mensaje de alerta y texto de instrucciones */
-.mensaje_y_texto {
+.btn-desencriptar{
+    background-color: var(--Color-blanco-grisaseo)
+    border: 1px solid var(--Color-Azul-oscuro);
+    border-radius: 24px;
+    color: var(--Color-Azul-oscuro);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-copiar{
+    border: 1px solid var(--Color-Azul-oscuro);
+    border-radius: 24px;
+    color: var(--Color-Azul-oscuro);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacion_con_imagen {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    position: relative;
-    top: -250px;
-    left: 250px;
 }
 
-.signo_de_exclamacion {
-    width: 16px; 
-    height: 16px;
-}
-
-.solo.letras_minusculas {
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
+.informacion {
+    color: var(--Color-Gris);
     font-size: 12px;
-    line-height: 18px;
 }
 
-
-/* Estilización del footer */
-.Copy_y_redes {
-    background-color: var(--Color-Gris-oscuro);
-    color: var(--Color-Blanco);
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
+.signo{
+    margin-right: 10px;
 }
 
-.Copy_y_redes p {
-    margin: 5px 0;
-}
-
-.redes {
-    margin-top: 10px;
-}
-
-.redes a {
-    display: inline-block;
-    color: var(--Color-Blanco);
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: var(--Color-Azul-twitter);
-}
-
-.redes a:hover {
-    background-color: var(--Color-Azul-twitter-hover);
-    color: var(--Color-Blanco);
-}
-
-@media (max-width: 1200px){
-    .header{
-        padding: 10%;
-    }
-
-    .entrada_y_salida_de_texto{
-        
-    }
-}
-    

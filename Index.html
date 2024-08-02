@@ -1,52 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-<head class="header">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="./Style/Style.css">
-    <figure>
-        <img class="logo_de_alura" src="./style/Assets/Logo.png" alt="Logo de alura">
-    </figure>
 </head>
-<body class="pagina">
-
-    <!-- Sección de entrada y salida de texto -->
-    <div class="entrada_y_salida_de_texto">
-        <textarea class="texto_entrada" id="texto_entrada" placeholder="Ingrese el texto aqui" required></textarea>
-        <div class="Mensajes_de_salida_de_texto">
-            <h1 class="mensaje_no_encontrado_texto">Ningun mensaje fue encontrado</h1>
-            <h2 class="mensaje_no_encontrado_texto2">Ingresa el texto que deseas Encriptar o Desencriptar</h2>
-        </div>
-        <textarea class="texto_salida" id="texto_salida" readonly></textarea>
-        <img class="Chica_mirando_diamante" src="./style/Assets/Muñeco.png" alt="imagen de una chica mirando con una lupa un diamante">
-    </div>
-    
-    <!-- Mensaje de alerta y texto de instrucciones -->
-    <div class="mensaje_y_texto">
-        <img class="signo_de_exclamacion" src="./style/Assets/bi_exclamation-circle-fill.png" alt="signo de exclamacion">
-        <p class="solo letras_minusculas">Solo letras minusculas y sin acentos</p>
-    </div>
-    
-    <!-- Botones de acción -->
-    <div class="Botones">
-        <input class="Encriptardor" type="button" id="Encriptador" value="Encriptar" disabled>
-        <input class="Desencriptador" type="button" id="Desencriptador" value="Desencriptar" disabled>
-    </div>
-    <div class="BotonCopiar">
-        <input class="copiar" type="button" id="copiar" value="copiar" disabled>
-    </div>
-
-    <!-- Pie de página -->
-    <footer class="Copy_y_redes">
-        <p>&copy; 2024 Torres Mauricio Ezequiel. Todos los derechos reservados.</p>
-        <p>Mis redes sociales</p>
-        <div class="redes">
-            <a href="https://github.com/Mashuu573">Github</a>
-            <a href="https://www.linkedin.com/in/mauricio-torres-1a2314266">Linkedin</a>
-        </div>
-    </footer>
-
+<body>
+    <header>
+        <img src="/style/Assets/Logo.png" alt="Logo de alura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="text_area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="informacion_con_imagen">
+                <div>
+                    <img class="signo" src="/style/Assets/bi_exclamation-circle-fill.png" alt="signo de exclamacion">
+                </div>
+                <div>
+                    <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                </div>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+        <div class="Contenedor">
+            <textarea class="mensaje" cols="20" rows="10" readonly></textarea>
+            <div>
+                <div class="Ningun_mensaje">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn-copiar">Copiar</button>
+            </div>
+        </div>    
+        </section>
+    </main>
 </body>
 </html>
-<script src="app.js"></script>
