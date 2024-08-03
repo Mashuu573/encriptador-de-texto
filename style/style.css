@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-/* Se establecen variables */
-*{
-    background: var(--Color-Azul-claro);
+* {
     font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
 }
 
 :root {
@@ -17,109 +11,30 @@
     --Color-Blanco: #ffffff;
     --Color-Gris: #343A40;
     --Color-Gris-oscuro: #282828;
-}
 
-.logo{
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 7%;
-
-}
-
-main{
-    display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
-}
-
-.text_area{
-    border: none;
-    color: var(--Color-Azul-oscuro);
-    margin-top: 90px;
-    text-transform: lowercase;
-    resize: none;
-}
-
-::placeholder {color: var(--Color-Azul-oscuro);}
-    .text_area:focus {
-        outline: none;
-    }
-
-.mensaje{
-    width: 400px;
-    height: 744px;
-    top: 40px;
-    left: 1300px;
-    background: var(--Color-Blanco);
-    background-image: url(/style/Assets/Muñeco.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    border-radius: 32px;
-    color: var(--Color-Azul-oscuro);
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
-    resize: none;
-}
-
-.mensaje:focus {
-    outline: none;
-}
-
-.text_area_y_mensaje{
-    display: flex;
-
-}
-
-.texto-area{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.h2_texto{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    margin: 0;
-}
-
-.parrafo_texto{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0;
-}
-
-.botones{
-    display: flex;
-    margin-top: 18px;
-}
-
-.btn-encriptar{
+.btn-encriptar {
     background-color: var(--Color-Azul-oscuro);
     border: 1px solid var(--Color-Azul-oscuro);
     border-radius: 24px;
     color: var(--Color-Blanco);
     cursor: pointer;
     height: 67px;
-    width: 328px;
+    width: 100%;
 }
 
-.btn-desencriptar{
-    background-color: var(--Color-blanco-grisaseo)
+
+.btn-desencriptar {
+    background-color: var(--Color-blanco-grisaseo);
     border: 1px solid var(--Color-Azul-oscuro);
     border-radius: 24px;
     color: var(--Color-Azul-oscuro);
     cursor: pointer;
     height: 67px;
-    margin-left: 30px;
-    width: 328px;
+
+    width: 100%;
 }
 
-.btn-copiar{
+.btn-copiar {
     border: 1px solid var(--Color-Azul-oscuro);
     border-radius: 24px;
     color: var(--Color-Azul-oscuro);
@@ -131,17 +46,151 @@ main{
     width: 336px;
 }
 
-.informacion_con_imagen {
-    display: flex;
-    align-items: center;
-}
-
-.informacion {
-    color: var(--Color-Gris);
-    font-size: 12px;
-}
-
-.signo{
+.signo {
     margin-right: 10px;
 }
 
+.cont-1 {
+    grid-area: cont-1;
+}
+
+.cont-2 {
+    grid-area: cont-2;
+}
+
+.cont-3 {
+    grid-area: cont-3;
+}
+
+.cont-4 {
+    grid-area: cont-4;
+}
+
+.contenedor-padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 89vh;
+    grid-template-areas: "cont-1 cont-1 cont-1 cont-2";
+    background-color: #F3F5FC;
+    padding: 40px;
+    grid-gap: 4vw;
+}
+
+.cont-texto {
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #FFF;
+    align-content: center;
+}
+
+.txt-not-found {
+    margin: 0px 4vw;
+    text-align: center;
+    display: grid;
+    grid-gap: 1vh;
+}
+
+.tit-nf {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.grid-izquierda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh auto;
+    grid-template-areas:
+        "encabezado"
+        "cont-input-txt";
+}
+
+.cont-input-txt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "cont-1 cont-1"
+        "cont-2 cont-2"
+        "cont-3 cont-3";
+    margin-left: auto;
+}
+
+.txt-advertencia {
+    display: flex;
+    gap: .5vw;
+    height: 5vh;
+    align-items: center;
+}
+
+.cont-1 input[type="text"] {
+    width: 65vw;
+    height: 68vh;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "btn-encriptar btn-desencriptar";
+    grid-gap: 1vw;
+}
+
+input[type="text"] {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width:1900px) {}
+
+@media screen and (max-width:1600px) {}
+
+@media screen and (max-width:1560px) {}
+
+@media screen and (max-width:1440px) {}
+
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:1270px) {}
+
+@media screen and (max-width:1150px) {}
+
+@media screen and (max-width:1025px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:970px) {}
+
+@media screen and (max-width:880px) {}
+
+@media screen and (max-width:650px) {
+    .contenedor-padre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cont-1"
+            "cont-2";
+        background-color: #F3F5FC;
+        padding: 40px;
+        grid-gap: 4vw;
+    }
+
+    .cont-input-txt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cont-1 cont-1"
+            "cont-2 cont-2"
+            "cont-3 cont-3";
+        margin-left: initial;
+    }
+}
+
+@media screen and (max-width:425px) {}
