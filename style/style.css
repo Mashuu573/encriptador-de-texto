@@ -1,144 +1,196 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    font-family: var(--Fuente-Inter);
+}
 
-/*Se establecen variables*/
-:root{
+:root {
     --Fuente-Inter: "Inter", sans-serif;
     --Color-Azul-oscuro: #0A3871;
     --Color-blanco-grisaseo: #D8DFE8;
     --Color-Azul-claro: #F3F5FC;
     --Color-Blanco: #ffffff;
     --Color-Gris: #343A40;
-}
+    --Color-Gris-oscuro: #282828;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*Color del fondo de pagina*/
-.pagina{
-    background-color: var(--Color-Azul-claro);
-    display: flex;
-    flex-direction: column;
-    
-}
-
-/*Estelizacion de imagenes*/
-.logo_de_alura{
-    width: 120px;
-    height: 48px;
-    margin-top: 40px;
-    margin-left: 40px;
-}
-
-.Chica_mirando_diamante{
-    width: 336px;
-    height: 304px;
-    margin-top: 283px;
-    margin-left: 1032px;
-    position: relative;
-    top: -80px;
-    left: -380px; /* Ajusta el valor según sea necesario */
-    margin: 0;
-}
-
-/*Estelizacion de los cuadros entrada y salida de texto*/
-.entrada_y_salida_de_texto{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.texto_entrada{
-    width: 577px;
-    height: 944px;
-    margin-top: 168px;
-    margin-left: 240px;
-    margin-bottom: 100px;
-    font-family: var(--Fuente-Inter);
-    font-size: 32px;
-    line-height: 48px;
-    color: var(--Color-Azul-oscuro);
-    background-color: transparent;
-    border: none;
-    resize: none;
-}
-
-.texto_salida{
-    width: 400px;
-    height: 944px;
-    margin-top: 0;
-    margin-left: 0;
-    border-radius: 32px;
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    border: none;
-    resize: none;
-}
-
-.mensaje_no_encontrado_texto{
-    font-family: var(--Fuente-Inter);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
-    align-items: center;
-}
-
-.mensaje_no_encontrado_texto2{
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    align-items: center;
-}
-
-/*Estilizacion de texto de salida*/
-.Mensajes_de_salida_de_texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 420px; /* Ajusta el valor según sea necesario */
-    bottom: -160px;
-}
-/*Estilizacion de botones*/
-.Botones{
-    display: flex;
-    align-items: center;
-    font-family: var(--Fuente-Inter);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19.36;
-    align-items: center;
-    width: 680px;
-    height: 67px;
-    top: 885px;
-    left: 240px;
-    gap: 24px;
-    
-}
-
-.Encriptardor{
-
-}
-
-.Desencriptador{
-
-}
-
-.copiar{
-
-}
-
-/*Estilizacion del footer*/
-.Copy_y_redes{
+.btn-encriptar {
     background-color: var(--Color-Azul-oscuro);
-    padding: 24px;
+    border: 1px solid var(--Color-Azul-oscuro);
+    border-radius: 24px;
     color: var(--Color-Blanco);
-    text-align: center;
-    font-family: var(--Fuente-Inter);
-    font-size: 1.5rem;
-    font-weight:  400;
+    cursor: pointer;
+    height: 67px;
+    width: 100%;
 }
+
+
+.btn-desencriptar {
+    background-color: var(--Color-blanco-grisaseo);
+    border: 1px solid var(--Color-Azul-oscuro);
+    border-radius: 24px;
+    color: var(--Color-Azul-oscuro);
+    cursor: pointer;
+    height: 67px;
+
+    width: 100%;
+}
+
+.btn-copiar {
+    border: 1px solid var(--Color-Azul-oscuro);
+    border-radius: 24px;
+    color: var(--Color-Azul-oscuro);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+
+.signo {
+    margin-right: 10px;
+}
+
+.cont-1 {
+    grid-area: cont-1;
+}
+
+.cont-2 {
+    grid-area: cont-2;
+}
+
+.cont-3 {
+    grid-area: cont-3;
+}
+
+.cont-4 {
+    grid-area: cont-4;
+}
+
+.contenedor-padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 89vh;
+    grid-template-areas: "cont-1 cont-1 cont-1 cont-2";
+    background-color: #F3F5FC;
+    padding: 40px;
+    grid-gap: 4vw;
+}
+
+.cont-texto {
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #FFF;
+    align-content: center;
+}
+
+.txt-not-found {
+    margin: 0px 4vw;
+    text-align: center;
+    display: grid;
+    grid-gap: 1vh;
+}
+
+.tit-nf {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.grid-izquierda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh auto;
+    grid-template-areas:
+        "encabezado"
+        "cont-input-txt";
+}
+
+.cont-input-txt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "cont-1 cont-1"
+        "cont-2 cont-2"
+        "cont-3 cont-3";
+    margin-left: auto;
+}
+
+.txt-advertencia {
+    display: flex;
+    gap: .5vw;
+    height: 5vh;
+    align-items: center;
+}
+
+.cont-1 input[type="text"] {
+    width: 65vw;
+    height: 68vh;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "btn-encriptar btn-desencriptar";
+    grid-gap: 1vw;
+}
+
+input[type="text"] {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width:1900px) {}
+
+@media screen and (max-width:1600px) {}
+
+@media screen and (max-width:1560px) {}
+
+@media screen and (max-width:1440px) {}
+
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:1270px) {}
+
+@media screen and (max-width:1150px) {}
+
+@media screen and (max-width:1025px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:970px) {}
+
+@media screen and (max-width:880px) {}
+
+@media screen and (max-width:650px) {
+    .contenedor-padre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cont-1"
+            "cont-2";
+        background-color: #F3F5FC;
+        padding: 40px;
+        grid-gap: 4vw;
+    }
+
+    .cont-input-txt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cont-1 cont-1"
+            "cont-2 cont-2"
+            "cont-3 cont-3";
+        margin-left: initial;
+    }
+}
+
+@media screen and (max-width:425px) {}
