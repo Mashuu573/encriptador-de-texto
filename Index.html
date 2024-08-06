@@ -18,7 +18,7 @@
                 <div class="cont-input-txt">
                     <div class="cont-1">
                         <div class="input-texto">
-                            <textarea name="input" id="" cols="30" rows="10"
+                            <textarea name="input" id="text-area" cols="30" rows="10"
                                 placeholder="Ingrese texto aqui"></textarea>
                         </div>
                     </div>
@@ -40,11 +40,12 @@
             </div>
         </div>
         <div class="cont-2">
+            <div class="txt-salida">
+                <textarea cols="20" rows="10" class="txt-salida" name="txt-salida" id="txt-salida" readonly></textarea>
+            </div>
             <div class="cont-texto" id="cont-texto-enc-desenc">
-                <div class="img-not-found">
+                <div class="txt-not-found-and-img-not-found">
                     <img src="/style/Assets/Muñeco.png" alt="">
-                </div>
-                <div class="txt-not-found">
                     <div class="tit-nf">Ningún mensaje fue encontrado</div>
                     <div class="desc-nf">Ingresa el texto que deseas encriptar o desencriptar</div>
                 </div>
@@ -54,11 +55,14 @@
             </div>
         </div>
     </div>
+    
+    <script src="app.js"></script>
+
 </body>
 
 <footer>
     <div class="footer">&copy;<span id="year"> </span>
-        <span> Torres Mauricio Ezequiel. Todos los derechos reservados.</span>
+        <span>Torres Mauricio Ezequiel. Todos los derechos reservados.</span>
     </div>
 </footer>
 

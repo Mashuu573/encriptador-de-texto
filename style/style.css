@@ -89,8 +89,8 @@
     grid-gap: 1vh;
 }
 
-.txt-not-found {
-    margin: 0px 4vw;
+.txt-not-found-and-img-not-found {
+    margin: 15vh 4vw;
     text-align: center;
     display: grid;
     grid-gap: 1vh;
@@ -117,7 +117,6 @@
 
 .cont-input-txt {
     display: grid;
-    grid-template-columns: ;
     grid-template-rows: auto;
     grid-template-areas:
         "cont-1 cont-1"
@@ -140,6 +139,18 @@
 .cont-1 textarea {
     width: 60vw;
     height: 68vh;
+}
+
+.cont-2 textarea {
+    position: absolute;
+    width: 100%;
+    max-width: 23%;
+    height: 100%;
+    max-height: 75%;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-left: 26px;
+    margin-right: 26px;
 }
 
 .botones {
@@ -168,8 +179,13 @@ textarea::placeholder {
     color: var(--Color-Azul-oscuro);
 }
 
+textarea[name="txt-salida"][readonly] {
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+}
+
 .footer {
-    
     bottom: 0;
     left: 0;
     right: 0;
@@ -181,8 +197,8 @@ textarea::placeholder {
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
-  }
-  
+}
+
 
 @media screen and (max-width:1900px) {}
 
@@ -192,15 +208,7 @@ textarea::placeholder {
 
 @media screen and (max-width:1440px) {}
 
-@media screen and (max-width:1400px) {}
-
-@media screen and (max-width:1280px) {}
-
-@media screen and (max-width:1270px) {}
-
-@media screen and (max-width:1150px) {}
-
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1400px) {
     .contenedor-padre {
         display: grid;
         grid-template-columns: 1fr;
@@ -223,8 +231,27 @@ textarea::placeholder {
             "cont-3 cont-3";
         margin-left: initial;
     }
+
+    .cont-2 textarea {
+        position: absolute;
+        width: 100%;
+        max-width: 89%;
+        height: 55%;
+        max-height: 55%;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
 }
-}
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:1270px) {}
+
+@media screen and (max-width:1150px) {}
+
+@media screen and (max-width:1100px) {}
 
 @media screen and (max-width:1025px) {}
 
@@ -232,8 +259,34 @@ textarea::placeholder {
 
 @media screen and (max-width:970px) {}
 
-@media screen and (max-width:880px) {}
+@media screen and (max-width:880px) {
+    .cont-2 textarea {
+        position: absolute;
+        width: 100%;
+        max-width: 80%;
+        height: 55%;
+        max-height: 55%;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+}
 
 @media screen and (max-width:650px) {}
+
+@media screen and (max-width:600px) {
+    .cont-2 textarea {
+        position: absolute;
+        width: 100%;
+        max-width: 72%;
+        height: 55%;
+        max-height: 55%;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+}
 
 @media screen and (max-width:425px) {}
