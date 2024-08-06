@@ -30,6 +30,7 @@ El proyecto consta de los siguientes archivos:
    cd encriptador-desencriptador
 
 3.Abre el archivo index.html en tu navegador preferido.
+    
     Uso
     Ingresa el texto que deseas encriptar en el área de texto proporcionada.
     Haz clic en el botón "Encriptar" para ver el texto encriptado en el área de salida.
@@ -54,7 +55,7 @@ El proyecto consta de los siguientes archivos:
     Sube los cambios a tu rama (git push origin feature/nueva-funcionalidad).
     Abre un Pull Request.
  
-    Contacto
-    Para cualquier consulta o sugerencia, por favor contacta a Maurex05@gmail.com.
+Contacto
+Para cualquier consulta o sugerencia, por favor contacta a Maurex05@gmail.com.
 
-    © 2024 Torres Mauricio Ezequiel. Todos los derechos reservados.
+© 2024 Torres Mauricio Ezequiel. Todos los derechos reservados.
