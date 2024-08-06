@@ -30,6 +30,7 @@ El proyecto consta de los siguientes archivos:
    cd encriptador-desencriptador
 
 3.Abre el archivo index.html en tu navegador preferido.
+    
     Uso
     Ingresa el texto que deseas encriptar en el área de texto proporcionada.
     Haz clic en el botón "Encriptar" para ver el texto encriptado en el área de salida.
