@@ -18,7 +18,7 @@
                 <div class="cont-input-txt">
                     <div class="cont-1">
                         <div class="input-texto">
-                            <textarea name="input" id="text-area" cols="30" rows="10"
+                            <textarea class="texto_entrada" name="input" cols="30" rows="10"
                                 placeholder="Ingrese texto aqui"></textarea>
                         </div>
                     </div>
@@ -32,8 +32,8 @@
                     </div>
                     <div class="cont-3">
                         <div class="botones">
-                            <button class="btn-encriptar">Encriptar</button>
-                            <button class="btn-desencriptar">Desencriptar</button>
+                            <button class="btn-encriptar" onclick="btn_Encriptar()">Encriptar</button>
+                            <button class="btn-desencriptar" onclick="btn_Desencriptar()">Desencriptar</button>
                         </div>
                     </div>
                 </div>
@@ -41,22 +41,24 @@
         </div>
         <div class="cont-2">
             <div class="txt-salida">
-                <textarea cols="20" rows="10" class="txt-salida" name="txt-salida" id="txt-salida" readonly></textarea>
+                <textarea class="texto_salida" name="txt-salida" cols="20" rows="10" readonly></textarea>
             </div>
             <div class="cont-texto" id="cont-texto-enc-desenc">
                 <div class="txt-not-found-and-img-not-found">
-                    <img src="/style/Assets/Muñeco.png" alt="">
-                    <div class="tit-nf">Ningún mensaje fue encontrado</div>
-                    <div class="desc-nf">Ingresa el texto que deseas encriptar o desencriptar</div>
+                    <img id="imagen_a_ocultar" src="/style/Assets/Muñeco.png" alt="">
+                    <div id="texto_a_ocultar">
+                        <div class="tit-nf">Ningún mensaje fue encontrado</div>
+                        <div class="desc-nf">Ingresa el texto que deseas encriptar o desencriptar</div>
+                    </div>
                 </div>
                 <div class="boton_cont-2">
-                    <button class="btn-copiar">Copiar</button>
+                    <button class="btn-copiar" id="btn-copiar" onclick="copiarAlPortapapeles()">Copiar</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    <script src="app.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
 

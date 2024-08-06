@@ -46,6 +46,12 @@
     height: 67px;
     width: 220px;
     font-family: var(--Fuente-Inter);
+
+
+}
+
+.margin-especifico {
+    margin-top: 48vh;
 }
 
 .signo {
