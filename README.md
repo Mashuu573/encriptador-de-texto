@@ -55,7 +55,7 @@ El proyecto consta de los siguientes archivos:
     Sube los cambios a tu rama (git push origin feature/nueva-funcionalidad).
     Abre un Pull Request.
  
-    Contacto
-    Para cualquier consulta o sugerencia, por favor contacta a Maurex05@gmail.com.
+Contacto
+Para cualquier consulta o sugerencia, por favor contacta a Maurex05@gmail.com.
 
-    © 2024 Torres Mauricio Ezequiel. Todos los derechos reservados.
+© 2024 Torres Mauricio Ezequiel. Todos los derechos reservados.
