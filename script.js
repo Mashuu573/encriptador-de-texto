@@ -3,6 +3,7 @@ const mensaje = document.querySelector(".texto_salida");
 const imagen = document.getElementById("imagen_a_ocultar");
 const texto = document.getElementById("texto_a_ocultar");
 const btnCopiar = document.getElementById("btn-copiar");
+const regex = /^[a-zA-Z-\s]*$/;
 
 function btn_Encriptar() {
     const textoEncriptado = encriptar(textArea.value);
@@ -14,7 +15,13 @@ function btn_Encriptar() {
     if (texto) {
         texto.remove();
     }
-
+    if (!regex.test(texto)) {
+        console.log("No se permiten caracteres especiales.");
+        return false; // Puedes evitar que se procese el input aquí
+    } else {
+        console.log("Entrada válida.");
+        return true;
+    }
     btnCopiar.classList.add("margin-especifico");
 }
 
