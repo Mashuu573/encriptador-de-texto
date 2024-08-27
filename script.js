@@ -43,6 +43,11 @@ function desencriptar(stringDesencriptada) {
     console.table(matrizCodigo);
     stringDesencriptada = stringDesencriptada.toLowerCase();
 
+    if (!regex.test(stringEncriptada)) {
+        console.log("No se permiten caracteres especiales ni números.");
+        return false;
+    }
+
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (stringDesencriptada.includes(matrizCodigo[i][1])) {
             stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
