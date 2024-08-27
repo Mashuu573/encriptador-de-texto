@@ -4,7 +4,7 @@ const imagen = document.getElementById("imagen_a_ocultar");
 const texto = document.getElementById("texto_a_ocultar");
 const btnCopiar = document.getElementById("btn-copiar");
 const regex = /^[a-zA-Z\s]*$/;
-
+const texto_invalido = ("No se permiten caracteres especiales ni números.");
 function btn_Encriptar() {
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
@@ -25,7 +25,7 @@ function encriptar(stringEncriptada) {
     stringEncriptada = stringEncriptada.toLowerCase();
     
     if (!regex.test(stringEncriptada)) {
-        alert ("No se permiten caracteres especiales ni números.");
+        return texto_invalido
     }
 
     for (let i = 0; i < matrizCodigo.length; i++) {
@@ -43,7 +43,7 @@ function desencriptar(stringDesencriptada) {
     stringDesencriptada = stringDesencriptada.toLowerCase();
 
     if (!regex.test(stringEncriptada)) {
-        alert ("No se permiten caracteres especiales ni números.");
+        return texto_invalido
     }
 
     for (let i = 0; i < matrizCodigo.length; i++) {
