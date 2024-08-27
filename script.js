@@ -3,7 +3,7 @@ const mensaje = document.querySelector(".texto_salida");
 const imagen = document.getElementById("imagen_a_ocultar");
 const texto = document.getElementById("texto_a_ocultar");
 const btnCopiar = document.getElementById("btn-copiar");
-const regex = /^[a-zA-Z-\s]*$/;
+const regex = /^[a-zA-Z\s]*$/;
 
 function btn_Encriptar() {
     const textoEncriptado = encriptar(textArea.value);
@@ -15,26 +15,26 @@ function btn_Encriptar() {
     if (texto) {
         texto.remove();
     }
-    if (!regex.test(texto)) {
-        console.log("No se permiten caracteres especiales.");
-        return false; // Puedes evitar que se procese el input aquí
-    } else {
-        console.log("Entrada válida.");
-        return true;
-    }
     btnCopiar.classList.add("margin-especifico");
 }
 
 function encriptar(stringEncriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     console.table(matrizCodigo);
+    
     stringEncriptada = stringEncriptada.toLowerCase();
+    
+    if (!regex.test(stringEncriptada)) {
+        console.log("No se permiten caracteres especiales ni números.");
+        return false;
+    }
 
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (stringEncriptada.includes(matrizCodigo[i][0])) {
             stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
         }
     }
+    
     return stringEncriptada;
 }
 
