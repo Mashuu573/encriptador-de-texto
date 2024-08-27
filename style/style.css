@@ -206,7 +206,7 @@ textarea[name="txt-salida"][readonly] {
 }
 
 
-@media screen and (max-width:1920px) {
+@media screen and (max-width:2000px) {
         .cont-2 textarea {
         position: absolute;
         width: 100%;
