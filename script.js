@@ -25,8 +25,7 @@ function encriptar(stringEncriptada) {
     stringEncriptada = stringEncriptada.toLowerCase();
     
     if (!regex.test(stringEncriptada)) {
-        console.log("No se permiten caracteres especiales ni números.");
-        return false;
+        alert ("No se permiten caracteres especiales ni números.");
     }
 
     for (let i = 0; i < matrizCodigo.length; i++) {
@@ -44,8 +43,7 @@ function desencriptar(stringDesencriptada) {
     stringDesencriptada = stringDesencriptada.toLowerCase();
 
     if (!regex.test(stringEncriptada)) {
-        console.log("No se permiten caracteres especiales ni números.");
-        return false;
+        alert ("No se permiten caracteres especiales ni números.");
     }
 
     for (let i = 0; i < matrizCodigo.length; i++) {
