@@ -206,7 +206,22 @@ textarea[name="txt-salida"][readonly] {
 }
 
 
-@media screen and (max-width:1900px) {}
+@media screen and (max-width:1920px) {
+        .cont-2 textarea {
+        position: absolute;
+        width: 100%;
+        max-width: 20%;
+        height: 100%;
+        max-height: 75%;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+}
+
+@media screen and (max-width:1861px) {
+}
 
 @media screen and (max-width:1600px) {}
 
